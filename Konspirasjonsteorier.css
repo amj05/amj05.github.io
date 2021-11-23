@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(185, 235, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.meny ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(59, 199, 255);
+}
+
+.meny li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.meny li {
+    float: left;
+}
+
+.meny li a:hover {
+    background-color: rgb(200, 240, 255);
+}
+
+@media only screen and (max-width: 600px) {
+    .meny li {
+        float: none;
+    }
+    body {
+        background-color: black;
+    }
+  }
+
+.jorda {
+    border-radius: 25px;
+    Width: 600px;
+}
+
+.måned {
+    border-radius: 25px;
+    Width: 550px;
+}
+
+.item1 { grid-area: left; }
+.item2 { grid-area: menu; }
+  
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'left menu';
+    grid-gap: 25px;
+    background-color: rgb(185, 235, 255);
+    padding: 10px;
+  }
+  
+.grid-container > div {
+    background-color: rgb(185, 235, 255);
+    text-align: center;
+    padding: 50px 0;
+    font-size: 50px;
+}
